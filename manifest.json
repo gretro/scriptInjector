@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "scriptInjector",
+    "description": "script injection with content script",
+    "version": "0.1.0",
+
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": ["http://localhost:3000/*"],
+            "js": [ "scriptInjector.js" ]
+        }
+    ]
+}
